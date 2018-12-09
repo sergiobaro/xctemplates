@@ -1,20 +1,6 @@
 import Foundation
 import Yaml
 
-enum TemplateType: String {
-  case file
-  case project
-}
-
-struct Template {
-  
-  let name: String
-  let type: TemplateType
-  let description: String?
-  let fileContents: String?
-  
-}
-
 enum TemplateParserError: Error {
   
   case missingProperty(String)
@@ -24,7 +10,7 @@ enum TemplateParserError: Error {
 
 class TemplateParser {
   
-  static func parse(name: String, string: String) throws -> Template {
+  func parse(string: String) throws -> Template {
     let yaml = try Yaml.load(string)
     
     guard let typeString = yaml["type"].string else {
@@ -35,11 +21,9 @@ class TemplateParser {
       throw TemplateParserError.invalidPropertyValue("Value \(typeString) is invalid for property 'type'")
     }
     
-    return Template(name: name,
-                    type: type,
+    return Template(type: type,
                     description: yaml["description"].string,
                     fileContents: yaml["file"].string)
-  }
-    
+  } 
   
 }

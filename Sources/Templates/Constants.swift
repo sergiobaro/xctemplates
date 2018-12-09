@@ -1,6 +1,6 @@
 import Foundation
 
-class Constants {
+struct Constants {
   
   static let templatesDestinationPath = "Library/Developer/Xcode/Templates"
   

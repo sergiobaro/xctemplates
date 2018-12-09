@@ -1,0 +1,5 @@
+type: file
+description: An empty swift file
+file: |
+  import Foundation
+  
