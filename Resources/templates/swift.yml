@@ -1,5 +1,25 @@
 type: file
 description: An empty swift file
+options: 
+  - type: text
+    identifier: productName
+    label: "Name:"
+    description: "The name of the type to create"
+    defaultValue: "MyType"
+    required: true
+    persisted: false
+  - type: text
+    identifier: type
+    label: "Type:"
+    description: "What kind of Swift type to create"
+    defaultValue: "class"
+    required: true
+    persisted: false
+    
 file: |
   import Foundation
+
+  ___VARIABLE_type:identifier___ ___VARIABLE_productName:identifier___ {
+
+  }
   

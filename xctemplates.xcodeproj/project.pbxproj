@@ -26,6 +26,8 @@
 		5A9EDED021BAFF74009F5602 /* CommandArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDECE21BAFEEE009F5602 /* CommandArgumentParser.swift */; };
 		5A9EDED121BAFF78009F5602 /* CommandArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDECC21BAFEA2009F5602 /* CommandArgument.swift */; };
 		5A9EDED421BAFFC1009F5602 /* CommandArgumentParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDED321BAFFC1009F5602 /* CommandArgumentParserTests.swift */; };
+		5AEB620E21BDCB5B00230D2F /* TemplateOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB620C21BDCA5500230D2F /* TemplateOption.swift */; };
+		5AEB621321BDCFC000230D2F /* Dictionary+add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB621021BDCFA100230D2F /* Dictionary+add.swift */; };
 		OBJ_147 /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Await.swift */; };
 		OBJ_148 /* ByteString.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ByteString.swift */; };
 		OBJ_149 /* CStringArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* CStringArray.swift */; };
@@ -372,6 +374,8 @@
 		5A9EDECC21BAFEA2009F5602 /* CommandArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandArgument.swift; sourceTree = "<group>"; };
 		5A9EDECE21BAFEEE009F5602 /* CommandArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandArgumentParser.swift; sourceTree = "<group>"; };
 		5A9EDED321BAFFC1009F5602 /* CommandArgumentParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandArgumentParserTests.swift; sourceTree = "<group>"; };
+		5AEB620C21BDCA5500230D2F /* TemplateOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateOption.swift; sourceTree = "<group>"; };
+		5AEB621021BDCFA100230D2F /* Dictionary+add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+add.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* SimplePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
 		OBJ_101 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		OBJ_102 /* StringMangling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMangling.swift; sourceTree = "<group>"; };
@@ -590,11 +594,20 @@
 			path = CommandTests;
 			sourceTree = "<group>";
 		};
+		5AEB620F21BDCF9000230D2F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5AEB621021BDCFA100230D2F /* Dictionary+add.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_11 /* Constants.swift */,
 				OBJ_20 /* Templates.swift */,
+				5AEB620F21BDCF9000230D2F /* Extensions */,
 				5A9EDECB21BAFE97009F5602 /* Command */,
 				OBJ_12 /* Files */,
 				OBJ_15 /* Generator */,
@@ -720,6 +733,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_18 /* Template.swift */,
+				5AEB620C21BDCA5500230D2F /* TemplateOption.swift */,
 				OBJ_19 /* TemplateParser.swift */,
 			);
 			path = Parser;
@@ -1369,6 +1383,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				5AEB621321BDCFC000230D2F /* Dictionary+add.swift in Sources */,
+				5AEB620E21BDCB5B00230D2F /* TemplateOption.swift in Sources */,
 				OBJ_234 /* Constants.swift in Sources */,
 				OBJ_235 /* FileDescription.swift in Sources */,
 				5A9EDED021BAFF74009F5602 /* CommandArgumentParser.swift in Sources */,
